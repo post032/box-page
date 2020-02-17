@@ -16,8 +16,16 @@ img {
 }
 a {
   text-decoration: none;
-  outline: none;
   cursor: pointer;
+}
+.button {
+  border: 2px solid transparent;
+}
+.button:hover,
+.button:focus {
+  background: #ffffff;
+  color: #E21313;
+  border: 2px solid #E21313;
 }
 .container {
   -webkit-box-sizing: border-box;
@@ -322,9 +330,7 @@ input[type="radio"].visually-hidden {
   line-height: 19px;
   color: #FFFFFF;
 }
-.head__element:focus,
 .head__link:focus,
-.head__element:hover,
 .head__link:hover {
   color: #E21313;
 }
@@ -362,7 +368,6 @@ input[type="radio"].visually-hidden {
   line-height: 22px;
   text-align: center;
   color: #FFFFFF;
-  border: none;
   background: #E21313;
   border-radius: 2px;
   display: -webkit-box;
@@ -1728,6 +1733,16 @@ input[type="radio"].visually-hidden {
   .contact__title::before {
     width: 551px;
     background: #E21313;
+  }
+}
+@media (min-width: 1140px) {
+  .contact__vk {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  .contact__vk svg {
+    margin: 11px 16px 0;
   }
 }
 .footer {
